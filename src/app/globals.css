@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #FFF9FA;
+    --bg-card: #FFFFFF;
+    --border-subtle: #FCE7F3;
+    --text-heading: #3D2936;
+    --text-body: #6B5263;
+    --accent-pink: #EC4899;
+    --accent-rose: #F43F5E;
+    --accent-blush: #FCE7F3;
+    --accent-lavender: #F3E8FF;
+    --accent-sage: #E8F5E9;
+    --accent-gold: #F59E0B;
+  }
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-body);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-serif-header {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+/* Custom aesthetic scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF9FA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F472B680;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #EC4899;
+}
+
+/* Shimmer Keyframe Animation for Skeletons */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    #FCE7F3 0%,
+    #FFF1F2 50%,
+    #FCE7F3 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.8s infinite linear;
+}
+
+/* Focus Visible Style Accessibility */
+*:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px #EC4899;
+}
+
+/* Touch target minimum sizes on mobile */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+}
