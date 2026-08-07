@@ -2,7 +2,7 @@
 
 A full-stack Personal Book Manager web application built with **Next.js (App Router)**, **TypeScript**, **Tailwind CSS**, **Framer Motion**, **MongoDB (Mongoose)**, and **JWT authentication**.
 
-![My Reading Nook UI Showcase](C:\Users\shreya tomar\.gemini\antigravity\brain\26b32e64-0a7e-43af-a089-b6d320383369\reading_nook_blush_light_preview_1785948884778.jpg)
+![My Reading Nook UI Showcase](./public/reading-nook-preview.jpg)
 
 [![Next.js](https://img.shields.io/badge/Next.js-15-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
